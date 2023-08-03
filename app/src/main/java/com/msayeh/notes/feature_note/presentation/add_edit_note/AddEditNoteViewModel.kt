@@ -1,13 +1,11 @@
 package com.msayeh.notes.feature_note.presentation.add_edit_note
 
-import android.util.Log
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.graphics.toArgb
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.msayeh.notes.di.AppModule
 import com.msayeh.notes.feature_note.domain.model.InvalidNoteException
 import com.msayeh.notes.feature_note.domain.model.Note
 import com.msayeh.notes.feature_note.domain.use_case.NoteUseCases
@@ -60,11 +58,11 @@ class AddEditNoteViewModel @Inject constructor(
                     currentNoteId = note.id
                     _noteTitle.value = noteTitle.value.copy(
                         text = note.title,
-                        isHintVisible = false
+                        isHintVisible = note.title.isBlank()
                     )
                     _noteContent.value = noteContent.value.copy(
                         text = note.content,
-                        isHintVisible = false
+                        isHintVisible = note.content.isBlank()
                     )
                     _noteColor.value = note.color
                 }

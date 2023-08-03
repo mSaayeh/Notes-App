@@ -10,8 +10,8 @@ import com.msayeh.notes.ui.theme.Violet
 
 @Entity
 data class Note(
-    val title: String,
-    val content: String,
+    val title: String = "",
+    val content: String = "",
     val timestamp: Long,
     val color: Int,
     @PrimaryKey(autoGenerate = true) val id: Int? = null
