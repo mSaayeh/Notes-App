@@ -1,6 +1,13 @@
 # Notes-App
 > Note Taking App with Clean Architecture and Jetpack Compose.
 
+<div>
+<img src="/Screenshots/empty_list.png" alt="Empty Notes List" width="20%" height="20%">
+<img src="/Screenshots/new_note.png" alt="New Note Screen" width="20%" height="20%">
+<img src="/Screenshots/notes.png" alt="Notes List" width="20%" height="20%">
+<img src="/Screenshots/sort.png" alt="Sort" width="20%" height="20%">
+</div>
+
 ## Description
 This Android project is a note-taking application developed using Kotlin and Jetpack Compose. It implements a basic clean architecture to ensure separation of concerns and maintainability. The application consists of two screens: a list of notes and a screen for adding/editing notes.
 
